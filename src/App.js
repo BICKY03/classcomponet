@@ -25,22 +25,13 @@ class App extends Component {
     });
   };
 
-  // Method to reset the count
-  reset = () => {
-    this.setState({
-      count: 0
-    });
-  };
-
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1>Counter: {this.state.count}</h1>
-          <button onClick={this.increment}>Increment</button>
-          <button onClick={this.decrement}>Decrement</button>
-          <button onClick={this.reset}>Reset</button>
-        </header>
+        <h1>Counter App</h1>
+        <p>Count: {this.state.count}</p>
+        <button onClick={this.increment}>Increment</button>
+        <button onClick={this.decrement}>Decrement</button>
       </div>
     );
   }
